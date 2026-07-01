@@ -1,0 +1,339 @@
+.cv-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #fff;
+  text-align: left;
+}
+
+.cv-header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.cv-name {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.5px;
+  color: #1a1a1a;
+}
+
+.cv-header h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  color: #555;
+  letter-spacing: 1px;
+}
+
+.cv-header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+}
+
+.cv-header li {
+  color: #666;
+  font-weight: 500;
+}
+
+.btn {
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 2px solid #333;
+  background-color: transparent;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.btn-edit:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-save {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-save:hover {
+  background-color: #555;
+  border-color: #555;
+}
+
+.cv-section {
+  margin-bottom: 50px;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #1a1a1a;
+}
+
+.section-divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.section-content {
+  line-height: 1.8;
+}
+
+.section-content p {
+  margin: 0;
+  color: #555;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.job-item {
+  margin-bottom: 35px;
+  padding-bottom: 30px;
+}
+
+.job-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.job-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.job-date {
+  font-size: 0.95rem;
+  color: #888;
+  font-style: italic;
+  margin-left: auto;
+}
+
+.job-company {
+  margin: 0 0 15px 0;
+  color: #666;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.job-responsibilities {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.job-responsibilities li {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  padding-left: 20px;
+  position: relative;
+}
+
+.job-responsibilities li:last-child {
+  margin-bottom: 0;
+}
+
+.job-responsibilities li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #999;
+  font-weight: bold;
+}
+
+.education-item {
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+}
+
+.education-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.edu-degree {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.edu-date {
+  font-size: 0.95rem;
+  color: #888;
+  font-style: italic;
+  margin-left: auto;
+}
+
+.edu-school {
+  margin: 0;
+  color: #666;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+.skill-tag {
+  padding: 12px 16px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skill-tag:hover {
+  background-color: #e8e8e8;
+  border-color: #999;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+  .cv-container {
+    padding: 30px 15px;
+  }
+
+  .cv-name {
+    font-size: 2rem;
+  }
+
+  .cv-header h3 {
+    font-size: 1.1rem;
+  }
+
+  .cv-header ul {
+    gap: 15px;
+    font-size: 0.9rem;
+  }
+
+  .section-content p {
+    font-size: 0.95rem;
+  }
+
+  .job-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .job-date {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .job-responsibilities li {
+    font-size: 0.9rem;
+  }
+
+  .edu-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edu-date {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .edu-degree {
+    font-size: 1rem;
+  }
+
+  .edu-school {
+    font-size: 0.9rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+  }
+
+  .skill-tag {
+    padding: 10px 14px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .cv-name {
+    font-size: 1.6rem;
+  }
+
+  .cv-header h3 {
+    font-size: 1rem;
+  }
+
+  .cv-header ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .education-item {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+  }
+
+  .edu-degree {
+    font-size: 0.95rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .skill-tag {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+}
